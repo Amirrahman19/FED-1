@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+   Author:Amir Rahman  
+    Date finished: 7/6/2021
+   Filename: feedback.html
+   View site in 1920px by 1080px
+   -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Images/blazer.JPG" type="image/png"/>
+  <title>Feedback</title>
+  <link href="../CSS/05.css" rel="stylesheet" />
+</head>
+<body>
+<!-- navigation bar -->
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo">
+            
+            <a href="main.html">
+              <img src="../Images/homeicon.jpg" class="logo" width="100" height= auto />
+<!-- Taken from https://media.istockphoto.com/vectors/home-icon-vector-id952981140?k=6&m=952981140&s=612x612&w=0&h=h7qdd88EzJPFnF_M5fRrd0IoEdAZSSslQ3warw4Pfa4= -->              
+            </a>
+            
+        </div>
+        
+    </ul>
+  </nav>
+  <!--Feedback form -->
+  <div id="feedback-container">
+    <div id="feedback-title">Tell me what you think!</div>
+    <form>
+      <!-- name -->
+      <label for="name">
+        <div class="feedbackLabel">Your name:</div>
+      </label>
+      <input id="name" class="feedbackInfo" type="text" placeholder="Your name" required><br>
+      <!-- email address -->
+      <label for="email">
+        <div class="feedbackLabel">Your e-mail address</div>
+      </label>
+      <input id="tel" class="feedbackInfo" type="text" placeholder="Your e-mail address" required><br>
+      <label for="email">
+        <div class="feedbackLabel">Your mobile number</div>
+      </label>
+      <input id="tel" class="feedbackInfo" type="text" placeholder="Mobile Number(omit country code)" required><br>
+      <!-- Rating -->
+      <label for="rbPgRating"><div class="feedbackLabel">Rate my website!</div></label>
+        <fieldset class="selections">
+        <label>Needs Work</label>
+        <input type="radio" name="pageRating" value="0">
+        <input type="radio" name="pageRating" value="1">
+        <input type="radio" name="pageRating" value="2">
+        <input type="radio" name="pageRating" value="3">
+        <input type="radio" name="pageRating" value="4">
+        <input type="radio" name="pageRating" value="5">
+        <input type="radio" name="pageRating" value="6">
+        <input type="radio" name="pageRating" value="7">
+        <input type="radio" name="pageRating" value="8">
+        <input type="radio" name="pageRating" value="9">
+        <input type="radio" name="pageRating" value="10">
+        <label>Great</label>
+      </fieldset>
+      <!-- Interest in site -->
+      
+        <label for="comment">
+          <div class="feedbackLabel">How likely are you to visit my website again?</div>
+        </label>
+        <br />
+        <br />
+        <br />
+        <div id="newRow">
+           Very unlikely <input type="range" min="0" max="10" value="5" step="1" name="q4" /> Very likely
+        </div>
+     <br />
+     <br />
+     <label for="insta">
+      <div class="feedbackLabel">Your Instagram username:</div>
+    </label>
+    <input id="insta" class="feedbackInfo" type="text" placeholder="Username" required><br>
+    <br />
+      <!--Additional comments  -->
+      <label for="comment">
+        <div class="feedbackLabel">Additional Comments:</div>
+      </label>
+      <br>
+      <textarea id="comment" class="feedbackInfo comment" rows="5" maxlength="500" placeholder="Additional comments"></textarea>
+      <input type="submit" class="btnSubmit" id = "btnSubmit">
+    </form>
+  </div>
+<!-- footer -->
+  <footer class="background">
+    <p class="text-footer">
+        Copyright © <cite>Amir Rahman</cite>
+    </p>
+  </footer>
+</body>
+</html>

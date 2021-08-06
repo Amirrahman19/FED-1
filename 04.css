@@ -1,0 +1,287 @@
+/*  Author:Amir Rahman  
+   Date:25/5/2021
+   Filename: 04.css
+   View site in 1920px by 1080px  */
+@import url("https://fonts.googleapis.com/css?family=Anton|Oswald");
+
+body {
+  margin: 0;
+}
+
+/* Styling for header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(255, 153, 0, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(197, 135, 0, 0.8),
+    rgba(226, 212, 12, 0.7)
+  );
+}
+
+.header-content {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.6em;
+  color: rgb(252, 252, 252);
+  font-weight: 400;
+  text-shadow: 0.1em 0.1em 0.1em rgb(49, 41, 61);
+}
+
+header h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2.4em;
+  color: rgb(49, 41, 61);
+}
+
+header p {
+  font-family: "Oswald", sans-serif;
+  color: rgb(252, 252, 252);
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+header a,
+header a:visited {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  padding-bottom: 0.1em;
+}
+
+header a:hover {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
+
+/* Styling for navigation, hovering and hyperlinks */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgb(49, 41, 61);
+  font-size: 1.4em;
+  margin: 2em;
+}
+
+logo {
+  image-orientation: left;
+  width: 300px;
+  height: auto;
+}
+
+nav a {
+  margin: 1em;
+}
+
+
+nav a,
+nav a:visited {
+  padding-bottom: 0.1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+  text-shadow: 0.1em 0.1em 0.1em rgb(49, 41, 61);
+  color: rgb(252, 252, 252);
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
+
+@media only screen and (max-width: 800px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header h2 {
+    font-size: 1.4em;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+section {
+  margin-top: -0.6em;
+}
+
+/* styling for background */
+section#section-one {
+  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+section#section-one .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: 1em;
+  grid-gap: 1em;
+}
+
+
+section h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 0.8em 0 0 0.6em;
+}
+
+
+section h2 {
+  color: rgb(49, 41, 61);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* Styling for main boxes */
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 0.1em solid rgb(49, 41, 61);
+  -webkit-box-shadow: 0.1em 0.1em 0.1em;           
+  color: rgba(252, 252, 252, 0.8);
+  box-shadow: 0.1em 0.1em 0.1em rgba(252, 252, 252, 0.8);
+  border-radius: 0.2em;
+  font-size: 2em;
+}
+/* Respective boxes */
+.s1-a {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  color: black;
+  font-size: 25px;
+}
+
+.s1-b {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 1;
+  color: black;
+  font-size: 25px;
+}
+
+.s1-c {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  color: black;
+  font-size: 25px;
+}
+
+.s1-d {
+  grid-column: 3 / span 3;
+  grid-row: 2 / span 1;
+  color: black;
+  font-size: 25px;
+}
+
+
+.s1-f {
+  grid-column: 1 / span 5;
+  grid-row: 3 / span 1;
+  color: black;
+  font-size: 25px;
+}
+
+/* Footer and colors */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 157, 255, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(197, 135, 0, 0.8),
+    rgba(226, 212, 12, 0.7)
+  );
+}
+
+footer p {
+  font-family: "Oswald", sans-serif;
+  text-shadow: 0.1em 0.1em 0.1em #31293d;
+  letter-spacing: 0.1em;
+  color: rgb(252, 252, 252);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0.4em;
+}
+
+footer a,
+footer a:visited {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  padding-bottom: 0.1em;
+}
+
+footer a:hover,
+footer a:active {
+  color: rgb(49, 41, 61);
+  border-bottom: rgb(49, 41, 61) solid 0.1em;
+}
